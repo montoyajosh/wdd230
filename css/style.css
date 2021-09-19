@@ -1,0 +1,60 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgb(243, 243, 243)
+}
+
+header,
+nav,
+footer,
+main {
+    margin: 1.25rem;
+    max-width: 760px;
+}
+
+#name,
+footer {
+    width: 625px;
+    padding: 10px 100px;
+    color: White;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: darkred;
+    border-radius: 10px;
+}
+
+h1 {
+    width: 600px;
+    margin: 20px;
+    font-size: 2.5rem;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px rgb(153, 153, 153);
+    width: 200px;
+    float: right;
+    margin-top: -90px;
+}
+
+hr.solid {
+    border-top: 2px solid #bbb;
+}
+
+.linklist,
+li {
+    margin: 10px 75px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span {
+    font-weight: 700;
+}
+
+#copyrightyear {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin: 0px 0px 100px 15px
+}
