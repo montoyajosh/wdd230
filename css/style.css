@@ -1,9 +1,3 @@
-body {
-    font-size: 18px;
-    line-height: 1.5;
-    background-color: rgb(243, 243, 243)
-}
-
 header,
 nav,
 footer {
@@ -11,14 +5,21 @@ footer {
     max-width: 760px;
 }
 
-#name,
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgb(243, 243, 243);
+    width: auto;
+}
+
+header,
 footer {
-    width: 600px;
-    padding: 10px 100px;
+    padding: 1em;
     color: White;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: darkred;
     border-radius: 10px;
+    text-align: center;
 }
 
 h1 {
@@ -29,18 +30,16 @@ h1 {
 img {
     border-radius: 10px;
     box-shadow: 6px 6px 3px rgb(153, 153, 153);
-    width: 200px;
     float: right;
-    margin-top: -90px;
 }
 
 hr.solid {
-    border-top: 2px solid #bbb;
+    border-top: 1px solid #bbb;
 }
 
 .linklist,
 li {
-    margin: 10px 75px;
+    margin: 5px 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -49,10 +48,18 @@ span {
 }
 
 #currentdate {
-    color: goldenrod;
+    color: rgb(29, 230, 179);
 }
 
-footer {
-    text-align: center;
-    margin: 0px 0px 100px 20px
+a:link,
+a:visited {
+    color: rgb(14, 136, 116);
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    color: rgb(13, 207, 175);
+    ;
 }
