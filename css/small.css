@@ -50,7 +50,8 @@ span {
     font-weight: 700;
 }
 
-#currentdate {
+#currentdate,
+#link {
     color: rgb(29, 230, 179);
 }
 
