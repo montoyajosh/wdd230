@@ -1,0 +1,102 @@
+header,
+section {
+    margin: 1.25rem;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgb(243, 243, 243);
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border: 1px solid rgb(87, 86, 86);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topcontainer {
+    padding: 2px 16px;
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h2,
+h1 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Antic Slab', serif;
+}
+
+.bottomcontainer {
+    padding: 2px 16px;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header,
+footer {
+    margin: 0px;
+    padding: 1em;
+    color: White;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: darkred;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 2.5rem;
+}
+
+button {
+    border: 1px solid rgb(87, 86, 86);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-weight: 700;
+}
+
+#currentdate {
+    color: rgb(29, 230, 179);
+}
+
+a:link,
+a:visited {
+    color: rgb(14, 136, 116);
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    color: rgb(13, 207, 175);
+    ;
+}
