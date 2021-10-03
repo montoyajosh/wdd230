@@ -1,0 +1,11 @@
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        width: 25%;
+    }
+    #sun {
+        width: 300px;
+    }
+}

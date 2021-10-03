@@ -14,6 +14,7 @@ body {
 
 #content {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1em;
 }
@@ -76,7 +77,8 @@ button {
     cursor: pointer;
 }
 
-.button:hover {
+button:hover,
+button:active {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -87,6 +89,10 @@ span {
 #currentdate,
 #link {
     color: rgb(29, 230, 179);
+}
+
+#link1 {
+    color: black;
 }
 
 a:link,

@@ -1,0 +1,146 @@
+body {
+    max-width: 760px;
+    justify-items: center;
+    margin: 0 auto;
+    font-family: "Poopins", sans-serif;
+    font-size: 18px;
+    background-color: rgb(243, 243, 243);
+}
+
+footer,
+header div {
+    background: darkred;
+    padding: 1.5rem;
+    text-shadow: rgb(66, 66, 66) 1px 1px;
+}
+
+footer,
+header div h1,
+header div h2 {
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif
+}
+
+h1 {
+    color: #5e0303;
+    font-size: 2.5rem;
+}
+
+h2,
+h3 {
+    font-size: 1.5rem;
+    color: #a80000;
+}
+
+p {
+    font-family: 'Antic Slab', serif;
+}
+
+main {
+    margin: 1.5rem;
+}
+
+#sun {
+    background: rgb(212, 199, 199);
+    padding: 1em;
+    width: 88%;
+}
+
+nav {
+    margin-top: -18px;
+}
+
+nav ul {
+    background-color: #a80000;
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 0.65rem;
+    font-size: 1rem;
+    font-family: 'Antic Slab', serif;
+}
+
+.personas {
+    margin: 1em;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 25% auto;
+    width: 100%;
+    background: lightcoral;
+}
+
+.personas img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 6rem;
+    display: block;
+    margin: auto;
+}
+
+section p {
+    padding: 0px 18px 0px 0px;
+}
+
+section ul li {
+    padding: 0.15rem;
+    font-family: 'Antic Slab', serif;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+span {
+    font-weight: 700;
+}
+
+button {
+    border: 1px solid rgb(87, 86, 86);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#currentdate,
+#link,
+#link1 {
+    color: rgb(29, 230, 179);
+}
+
+#link1 {
+    color: black;
+}
+
+button:hover,
+button:active {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+a:link,
+a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: rgb(212, 199, 199);
+}
