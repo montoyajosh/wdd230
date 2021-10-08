@@ -1,3 +1,4 @@
+document.getElementById("copyrightyear").textContent = new Date().getFullYear();
 const options = {
     weekday: "long",
     day: "numeric",
@@ -5,6 +6,4 @@ const options = {
     year: "numeric"
 }
 let updated = new Date(document.lastModified).toLocaleString('PST', options);
-document.getElementById("currentdate").innerHTML = updated;
-const fullyear = `${year}`;
-document.getElementById("copyrightyear").textContent = fullyear;
+document.getElementById("lastupdated").innerHTML = updated;

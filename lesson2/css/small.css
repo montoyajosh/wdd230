@@ -10,6 +10,7 @@ body {
     width: auto;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 #content {
@@ -86,7 +87,7 @@ span {
     font-weight: 700;
 }
 
-#currentdate,
+#lastupdated,
 #link {
     color: rgb(29, 230, 179);
 }
