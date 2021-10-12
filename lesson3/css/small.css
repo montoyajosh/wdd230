@@ -134,7 +134,8 @@ button {
     color: rgb(29, 230, 179);
 }
 
-#link1 {
+#link1,
+#link2 {
     color: black;
 }
 

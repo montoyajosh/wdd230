@@ -13,7 +13,7 @@ body {
 
 footer,
 header div {
-    background: #008BCC;
+    background: #00547A;
     padding: 1.5em;
     text-shadow: rgb(66, 66, 66) 1px 1px;
 }
@@ -29,7 +29,7 @@ footer {
 }
 
 header {
-    background-color: #008BCC;
+    background-color: #104F93;
     padding: 5px 0;
     display: flex;
     align-items: center;
@@ -37,13 +37,15 @@ header {
 }
 
 header img {
-    width: 120px;
+    width: 100px;
     height: auto;
+    margin: 0 0 0 1em;
 }
 
 .headings {
     display: flex;
     flex-direction: column;
+    margin: 0 1em 0 0;
 }
 
 h1,
@@ -71,7 +73,7 @@ h3 {
 .motto {
     font-style: italic;
     letter-spacing: 1pt;
-    color: #c96B11;
+    color: #FCFF66;
     margin-left: 20px;
     font-size: .9rem;
     font-family: 'Antic Slab', serif;
@@ -80,21 +82,25 @@ h3 {
 
 nav {
     margin: 0 auto;
-    max-width: 760px;
-    background-color: #2381a9;
+    max-width: 100%;
+    background-color: #00547A;
 }
 
 .navigation {
     list-style: none;
-    padding: 0;
-    margin-top: 1px
+    padding: 0px;
+    margin-top: 1px;
+    max-width: 760px;
+    color: white;
 }
 
 .navigation li:nth-child(-n+2) {
     display: block;
-    display: flex;
-    height: 1rem;
+    height: 1.3rem;
     padding: .40em;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .navigation li {
@@ -104,25 +110,16 @@ nav {
 .navigation a {
     display: block;
     padding: 0.75em;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
-    color: black;
     font-weight: 700;
     transition: 0.5s;
 }
 
-.navigation a:hover {
-    color: white;
-    background-color: black;
-}
-
-
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-
 .responsive li {
     display: block;
+    font-family: 'Antic Slab', serif;
+    padding: auto;
 }
 
 *,
@@ -132,14 +129,12 @@ nav {
 }
 
 .ham {
-    height: 1.5rem;
-    ;
     border: none;
     position: absolute;
-    top: 8.45em;
+    top: 7.2rem;
     right: -2.5em;
     transform: translateX(-100%);
-    background: #2381a9;
+    background: #00547A;
     padding: 1em .5em;
     border-radius: .25em 0 0 .25em;
 }
@@ -211,15 +206,6 @@ span {
     font-weight: 700;
 }
 
-#black {
-    background: black;
-    height: 0.5em;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 #currentdate,
 #link,
 #link1 {
@@ -238,5 +224,12 @@ a:visited {
 
 a:hover,
 a:active {
-    color: rgb(212, 199, 199);
+    color: #0DE6B3
+}
+
+.active,
+.navigation a:hover {
+    background-color: #2F2A2A;
+    border: 1px solid #ccc;
+    color: white;
 }
