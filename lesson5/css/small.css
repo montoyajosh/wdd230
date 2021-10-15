@@ -1,0 +1,236 @@
+header,
+footer,
+nav {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+footer,
+header div {
+    background: #00547A;
+    padding: 1.5em;
+    text-shadow: rgb(66, 66, 66) 1px 1px;
+}
+
+footer,
+header div h1,
+header div h2 {
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+header {
+    background-color: #104F93;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 1em;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 0 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif
+}
+
+h1 {
+    color: #c96B11;
+}
+
+h2,
+h3 {
+    color: #f9ab4f;
+}
+
+.headings h1 {
+    color: white;
+    font-size: 1.6em;
+    margin: 0 0 0 17px;
+    text-shadow: rgb(66, 66, 66) 1px 1px;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: #FCFF66;
+    margin-left: 20px;
+    font-size: .9rem;
+    font-family: 'Antic Slab', serif;
+    text-shadow: rgb(66, 66, 66) 1px 1px;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #00547A;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0px;
+    margin-top: 1px;
+    max-width: 760px;
+    color: white;
+}
+
+.navigation li:nth-child(-n+2) {
+    margin-top: -1px;
+    display: block;
+    height: 1.3rem;
+    padding: .40em;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.responsive li {
+    display: block;
+    font-family: 'Antic Slab', serif;
+    padding: auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.ham {
+    border: none;
+    position: absolute;
+    top: 7.2rem;
+    right: -2.5em;
+    transform: translateX(-100%);
+    background: #00547A;
+    padding: 1em .5em;
+    border-radius: .25em 0 0 .25em;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 1.5em;
+    height: 2.5px;
+    background: white;
+    transition: transform 350ms ease-in-out, opacity 200ms linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    padding: 0px;
+}
+
+.hamburger::before {
+    bottom: 6.5px;
+}
+
+.hamburger::after {
+    top: 6.5px;
+}
+
+
+/* Navigation open styles */
+
+.responsive nav {
+    transform: translateX(0);
+}
+
+
+/* Change this stuff below */
+
+.responsive .hamburger {
+    transform: rotate(45deg);
+}
+
+.responsive .hamburger::before {
+    opacity: 0;
+}
+
+.responsive .hamburger::after {
+    transform: rotate(90deg) translate(-6px);
+}
+
+main {
+    max-width: 760px;
+    margin: auto;
+    padding: 1rem;
+}
+
+#unknown {
+    border: 2px solid#ccc;
+    padding: 3rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+#currentdate,
+#link,
+#link1 {
+    color: rgb(29, 230, 179);
+}
+
+#link1 {
+    color: black;
+}
+
+a:link,
+a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #0DE6B3
+}
+
+.active,
+.navigation a:hover {
+    background-color: #2F2A2A;
+    border: 1px solid #ccc;
+    color: white;
+}
