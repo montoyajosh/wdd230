@@ -1,5 +1,5 @@
 document.getElementById("copyrightyear").textContent = new Date().getFullYear();
-const options = {
+const options1 = {
     weekday: "long",
     day: "numeric",
     month: "long",
@@ -7,7 +7,7 @@ const options = {
     hour: "numeric",
     minute: "numeric"
 }
-document.getElementById("currentdate").textContent = new Date().toLocaleDateString('PST', options)
+document.getElementById("currentdate").textContent = new Date().toLocaleDateString('PST', options1)
 const menubutton = document.querySelector('.menu');
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
@@ -26,4 +26,14 @@ for (var i = 0; i < btns.length; i++) {
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
     });
+}
+
+const options2 = {
+    weekday: 'long'
+}
+const day_name = currentdate.toLocaleDateString('PST', options2)
+    // console.log(dayName)
+
+if (day_name == "Friday") {
+    document.getElementsByClassName("pancake")[0].classList.toggle("is_tomorrow")
 }
