@@ -37,8 +37,8 @@ img {
     box-shadow: 6px 6px 3px rgb(153, 153, 153);
 }
 
-hr.solid {
-    border-top: 1px solid #bbb;
+hr {
+    border: 1px solid #bbb;
 }
 
 .linklist,

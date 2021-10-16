@@ -28,7 +28,14 @@
         text-align: center;
         padding: 1em;
     }
-    .navigation li:nth-child(-n+2) {
+    #myDIV {
         display: none;
+    }
+    .weather-sum {
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 10%;
+        right: 60%;
     }
 }
