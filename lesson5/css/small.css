@@ -56,6 +56,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 2px solid white;
 }
 
 header img {
@@ -228,6 +229,45 @@ hr {
 
 span {
     font-weight: 700;
+}
+
+.contact-info {
+    background-color: #104F93;
+    max-width: 100%;
+    color: white;
+    padding: 1em;
+    border-bottom: 2px solid white;
+}
+
+.contact-info p {
+    padding: 0 1em;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.info {
+    padding: 0 1em;
+    grid-column: 1/2;
+}
+
+.preston_map {
+    display: none;
+}
+
+.social_media {
+    margin: auto
+}
+
+.social_media img {
+    max-width: 2.8rem;
+    padding: .5rem 0.1rem;
+    border-radius: 15px;
+    grid-column: 2/3;
 }
 
 #currentdate,
