@@ -88,6 +88,8 @@
         display: block;
         width: 100%;
         grid-row: 1/2;
+        border: 1px solid #c96B11;
+        box-shadow: 3px 3px 4px #ff9e44;
     }
     .social_media {
         margin: auto;
