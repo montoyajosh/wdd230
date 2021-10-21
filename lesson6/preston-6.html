@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script defer src="js/date.js"></script>
+    <script defer src="js/winchill.js"></script>
 </head>
 
 <body>
@@ -46,24 +47,28 @@
     <main>
         <h1>Preston, Idaho</h1>
         <section class="hero">
-            <img src="images/preston-idaho.jpg" alt="Clear sky landscape photo">
+            <picture>
+                <source srcset="images/heroimage_768w.jpg" media="(min-width: 540px) and (max-width: 767px)">
+                <source srcset="images/heroimage_1100w.jpg" media="(min-width: 768px)">
+                <img src="images/heroimage_540w.jpg" alt="Spring field">
+            </picture>
             <div class="weather-sum">
                 <h2>Weather Summary
                     <hr>
                 </h2>
                 <div class="element">
                     <p>Currently:</p>
-                    <p>High:</p>
+                    <p>Temperature:</p>
                     <p>Wind Chill:</p>
                     <p>Humidity:</p>
                     <p>Wind Speed:</p>
                 </div>
                 <div class="data">
                     <p>Sunny</p>
-                    <p>70 °F</p>
-                    <p>68 °F</p>
+                    <p class="temp">70</p>
+                    <p class="windchill">
                     <p>50%</p>
-                    <p>6 mph</p>
+                    <p class="windspeed">6</p>
                 </div>
             </div>
         </section>
@@ -76,45 +81,48 @@
                         <img src="images/sunny-icon.jpg" alt="Sun icon">
                         <span class="temperature">89 °F</span>
                     </div>
-                    <div class="grid-col">
-                        <span class="col-head">Tuesday</span>
-                        <img src="images/sunny-icon.jpg" alt="Sun icon">
+                    <div class="grid-col ">
+                        <span class="col-head ">Tuesday</span>
+                        <img src="images/sunny-icon.jpg" alt="Sun icon ">
                         <span class="temperature">78 °F</span>
                     </div>
-                    <div class="grid-col">
-                        <span class="col-head">Wednesday</span>
-                        <img src="images/sunny-icon.jpg" alt="Sun icon">
+                    <div class="grid-col ">
+                        <span class="col-head ">Wednesday</span>
+                        <img src="images/sunny-icon.jpg" alt="Sun icon ">
                         <span class="temperature">87 °F</span>
                     </div>
-                    <div class="grid-col">
-                        <span class="col-head">Thursday</span>
-                        <img src="images/sunny-icon.jpg" alt="Sun icon">
+                    <div class="grid-col ">
+                        <span class="col-head ">Thursday</span>
+                        <img src="images/sunny-icon.jpg" alt="Sun icon ">
                         <span class="temperature">87 °F</span>
                     </div>
-                    <div class="grid-col">
-                        <span class="col-head">Friday</span>
-                        <img src="images/sunny-icon.jpg" alt="Sun icon">
+                    <div class="grid-col ">
+                        <span class="col-head ">Friday</span>
+                        <img src="images/sunny-icon.jpg" alt="Sun icon ">
                         <span class="temperature">72 °F</span>
                     </div>
                 </div>
         </section>
-        <section class="article"><img src="images/rainybg.jpg" alt="A girl with an umbrella under the rain">
+        <section class="article ">
+            <picture>
+                <source srcset="images/rainybg_768w.jpg" media="(min-width: 541px) and (max-width: 768px)">
+                <source srcset="images/rainybg_1100w.jpg" media="(min-width: 769px)">
+                <img src="images/rainybg_540w.jpg" alt="A girl with an umbrella under the rain">
+            </picture>
             <h2>Be active even if it's raining</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum consectetur mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque vestibulum rutrum dolor vitae tristique. Maecenas efficitur
-                mi leo, vitae luctus libero blandit in. Phasellus leo erat, vestibulum id tristique vel, viverra id augue. Maecenas posuere nisl finibus sem volutpat, a vestibulum purus egestas. Phasellus ornare urna at ipsum tincidunt, et dapibus est
-                vulputate. Integer eget diam urna. Phasellus eget nulla maximus, pulvinar erat nec, vehicula nibh. Integer vel quam tincidunt metus finibus molestie at eu lacus. Nam interdum felis nec aliquam lobortis. Fusce diam sem, maximus at justo
-                imperdiet, sodales pretium diam. Phasellus pellentesque ipsum nec tortor scelerisque, a ultrices augue tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque accumsan leo, vitae lobortis elit lacinia quis. Duis mollis sapien nec sem pellentesque consequat. Cras mollis, lectus vel tempor sodales, orci risus sollicitudin elit, et suscipit massa justo eget nulla. In laoreet erat libero. Phasellus ipsum ante, lobortis nec est placerat, feugiat varius enim. Sed vitae consequat ante. Sed mollis velit sit amet mauris aliquet, ac vulputate augue ultricies. Etiam ac dignissim tellus. Aenean luctus turpis elit, eu commodo est consectetur vitae. Aliquam lectus libero, suscipit rhoncus posuere condimentum, porttitor eget lorem. Maecenas ac rhoncus leo, tincidunt auctor purus. Nam faucibus augue interdum, elementum felis id, efficitur arcu. Aliquam et elementum nisi.</p>
+            <br>
+            <p>Donec lobortis volutpat lorem sed iaculis. Vivamus elementum nec ex in euismod. Quisque dui leo, consectetur et placerat vitae, sollicitudin eu leo. Nulla erat eros, ultrices a diam at, ultrices tempor sem. Donec pellentesque pellentesque mi sit amet interdum. Nunc quam nibh, fringilla eu commodo lobortis, euismod vel felis. Etiam consectetur ex a enim elementum suscipit non sed eros. Vivamus erat sapien, dignissim at laoreet id, commodo a nibh. Proin ut quam id arcu hendrerit venenatis. Nam posuere suscipit nisl vitae tempus. Morbi id lorem sit amet metus porttitor vestibulum.</p>
         </section>
-
     </main>
     <section class="contact-info">
-        <img class="preston_map" src="images/Preston-map.png" alt="Map of Preston, Idaho">
+        <a href="https://www.google.com/maps/place/272+W+4th+S,+Preston,+ID+83263,+USA/@42.0893625,-111.8863,17z/data=!3m1!4b1!4m5!3m4!1s0x8754f7be516f4175:0x370a785b55d41fe7!8m2!3d42.0893585!4d-111.8841113" target="_blank"><img class="preston_map" src="images/Preston-map.png" alt="Map of Preston, Idaho"></a>
         <div class="contact">
             <div class="info">
                 <h2>Contact Information</h2>
-                <p><img src="images/location_icon.png" alt="Location icon." width="13"> 272 W 4th S</p>
+                <p><img src="images/location_icon.png" alt="Location icon" width="13"> 272 W 4th S</p>
                 <p>Preston, ID 83263, USA</p>
-                <p><img src="images/phone_icon.jpg" alt="Phone icon." width="18"> 999-999-9999</p>
+                <p><img src="images/phone_icon.jpg" alt="Phone icon" width="18"> 999-999-9999</p>
                 <p>&#9993; idahoweathersolution.com</p>
             </div>
             <div class="social_media">
@@ -126,11 +134,8 @@
         </div>
     </section>
     <footer>
-
-        <p>&copy; <span id="copyrightyear"></span> <span>&#124;</span>
-            <a id="link" href="../index.html">Joshua Montoya</a> <span>&#124;</span> Philippines <span>&#124;</span> <a id="link" href="https://www.byui.edu/online" target="_blank">BYUI Learning Online</a></p>
+        <p>&copy; <span id="copyrightyear" ></span> Idaho Weather Solutions</p>
         <p>Current Date: <span id="currentdate"></span></p>
-        </div>
     </footer>
 </body>
 

@@ -75,12 +75,13 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     color: #c96B11;
     text-shadow: rgb(66, 66, 66) 1px 1px;
+    text-align: center;
 }
 
 h2,
@@ -160,13 +161,14 @@ main {
     max-width: 760px;
     margin: auto;
     padding: 1em 1em 0 1em;
+    margin-top: -1em;
 }
 
 .hero {
     position: relative;
 }
 
-.hero img {
+picture img {
     max-width: 100%;
 }
 
@@ -195,7 +197,7 @@ hr {
     margin: .5em .5em;
 }
 
-.element {
+.element {color: white;
     text-align: right;
     grid-column: 1 / 2;
     grid-row: 2/3;
@@ -213,12 +215,16 @@ hr {
 
 .article {
     text-align: center;
-    margin: 1em 1em 0 1em
+    margin: 1em 0 1em 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
 }
 
-.article p,
-.article h2 {
+.article p {
     text-align: justify;
+    margin: 0;
 }
 
 .article img {
@@ -227,9 +233,7 @@ hr {
     border-radius: 5px;
 }
 
-span {
-    font-weight: 700;
-}
+
 
 .contact-info {
     background-color: #104F93;
