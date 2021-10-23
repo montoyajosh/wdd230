@@ -34,15 +34,15 @@ p {
     font-size: 18px;
 }
 
-.pancake {
+.friday {
     display: none;
 }
 
-.party {
+.show_announcement {
     display: block;
 }
 
-.pancake p {
+.friday p {
     font-weight: 400;
     margin: auto;
     padding: 1.5rem;
@@ -112,15 +112,17 @@ h4 {
     color: white;
     margin: 0;
     padding: 0.2em 1em;
+    cursor: pointer;
 }
 
-#myDIV {
+.navigation li:nth-child(1) {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 0.5em .5em;
     font-family: 'Antic Slab', serif;
     font-size: 18px;
     color: white;
+    cursor: pointer;
 }
 
 nav {
@@ -160,6 +162,7 @@ main {
     max-width: 760px;
     margin: auto;
     padding: 1em 1em 0 1em;
+    margin-top:-16px;
 }
 
 .hero {
@@ -213,12 +216,16 @@ hr {
 
 .article {
     text-align: center;
-    margin: 1em 1em 0 1em
+    margin: 1em 0 1em 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
 }
 
-.article p,
-.article h2 {
+.article p {
     text-align: justify;
+    margin: 0;
 }
 
 .article img {
@@ -290,10 +297,14 @@ a:hover,
 a:active {
     color: #0DE6B3
 }
-
-.active,
+.active {
+    background-color: #2F2A2A;
+    border: 1px solid #ccc;color:#f9ab4f;text-shadow: #c96B11 1px 1px;
+    cursor: default;
+}
 .navigation a:hover {
     background-color: #2F2A2A;
     border: 1px solid #ccc;
-    color: white;
+    color:#f9ab4f;
+    text-shadow: #c96B11 1px 1px;
 }
