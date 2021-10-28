@@ -5,27 +5,27 @@ const imageOptions = {
     rootMargin: '0px 0px 50px 0px'
 };
 
-function loadImages(image) {
+function lazyload(image) {
     image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => { (image.removeAttribute('data-src')) };
+    image.onload = () => {(image.removeAttribute('data-src'))};
 }
 
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((items, observer) => {
+if('IntersectionObserver' in window) {
+    const imageobserver = new IntersectionObserver((items, observer) => {
         items.forEach((item) => {
-            if (item.isIntersecting) {
-                loadImages(item.target);
+            if(item.isIntersecting) {
+                lazyload(item.target);
                 observer.unobserve(item.target);
             }
         });
     }, imageOptions);
 
-    images.forEach((img) => {
-        imageObserver.observe(img);
+    images.forEach((img) => { 
+        imageobserver.observe(img); 
     });
 } else {
-    images.forEach((img) => {
-        loadImages(img);
+    images.forEach((img) => { 
+        lazyload(img); 
     });
 }
 
