@@ -6,7 +6,7 @@ window.onresize = () => { if (window.innerWidth > 760) mainnav.classList.remove(
 var header = document.querySelector(".navigation");
 var btns = header.getElementsByClassName("list");
 for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
+    btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace("active", "");
         this.className += " active";

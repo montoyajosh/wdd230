@@ -245,7 +245,7 @@ const chapters = {
     "Moroni 10": "",
 }
 
-addbutton.addEventListener('click', function() {
+addbutton.addEventListener('click', function () {
     let text = input.value;
     if (text in chapters === true && counter !== 26) {
         const newItems = document.createElement('li');
@@ -255,7 +255,7 @@ addbutton.addEventListener('click', function() {
         newItems.appendChild(newButton);
         ulist.appendChild(newItems);
         counter = counter + 1
-        newButton.addEventListener('click', function() {
+        newButton.addEventListener('click', function () {
             ulist.removeChild(newItems);
             counter -= 1
         })

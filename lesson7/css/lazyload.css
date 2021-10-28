@@ -1,0 +1,59 @@
+body {
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    max-width: 100%;
+}
+
+h1 {
+    font-family: sans-serif;
+    margin: 1rem; 
+    line-height: 3rem;
+}
+
+p {
+    font-family: serif;
+    margin: 1rem; 
+    line-height: 2rem;
+}
+
+header, footer {    
+    color: white;
+    background-color: #8b0000;
+    padding: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+} 
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+picture {
+    display: block;
+    margin: .5rem auto;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.4s;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 6px 6px 3px rgb(153, 153, 153);
+}
+
+a:link,
+a:visited {
+    color: rgb(29, 230, 179);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 540px) {
+
+}

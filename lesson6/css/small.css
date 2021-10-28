@@ -114,6 +114,7 @@ h4 {
     margin: 0;
     padding: 0.2em 1em;
     cursor: pointer;
+    border-bottom: 1px solid white;
 }
 
 .navigation li:nth-child(1) {

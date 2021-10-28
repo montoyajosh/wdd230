@@ -3,6 +3,7 @@ const options1 = {
     weekday: "long",
     day: "numeric",
     month: "long",
-    year: "numeric"
-}
-document.getElementById("currentdate").textContent = new Date().toLocaleDateString('PST', options1)
+    year: "numeric",
+};
+document.getElementById("currentdate").textContent =
+    new Date().toLocaleDateString("PST", options1);
