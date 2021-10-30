@@ -28,5 +28,3 @@ if('IntersectionObserver' in window) {
         lazyload(img); 
     });
 }
-
-document.getElementById("copyrightyear").textContent = new Date().getFullYear();

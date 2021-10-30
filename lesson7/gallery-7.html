@@ -19,14 +19,15 @@
     <script defer src="js/announcement.js"></script>
     <script defer src="js/date.js"></script>
     <script defer src="js/navigation.js"></script>
+    <script defer src="js/lazyload.js"></script>
+    <script defer src="js/api_storage.js"></script>
 </head>
 
 <body>
     <section class="friday">
         <p>
             Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at
-            the city
-            park pavilion.
+            the city park pavilion.
         </p>
     </section>
     <header>
@@ -42,8 +43,7 @@
             <li class="menu">&#9776; Menu</li>
             <li><a href="#" class="list">Home</a></li>
             <li><a href="../lesson6/preston-6.html" class="list">Preston</a></li>
-            <li><a href="#" class="list">Soda</a></li>
-            <li><a href="#" class="list">Springs</a></li>
+            <li><a href="#" class="list">Soda Springs</a></li>
             <li><a href="#" class="list">Fish Heaven</a></li>
             <li><a href="#" class="list">Storm Center</a></li>
             <li><a href="gallery-7.html" class="list active">Gallery</a></li>
@@ -51,6 +51,44 @@
     </nav>
     <main>
         <h1>Weather Gallery</h1>
+        <div class="gallery">
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/bright_sky.jpg" alt="Mountain view">
+                <figcaption>Sunrise in Preston</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/dark_sky.jpg" alt="Partly cloudy sky over field">
+                <figcaption>Thunderstorm over Fish Haven</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/mountains.jpg" alt="Sunset over field">
+                <figcaption>Calm cold weather in Soda Springs</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/night_cliff.jpg" alt="Traffic lights in the rain">
+                <figcaption>Night sky in Fish Haven</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/peaceful_sky.jpg" alt="Sunny flowers and tree">
+                <figcaption> Thunderstorm in Preston</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/red_sky.jpg" alt="Snowy mountain with autumn trees">
+                <figcaption>The dusk settled over Fish Haven </figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/sky.jpg" alt="Sunny forest">
+                <figcaption>Above the clouds in Preston</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/sunrise.jpg" alt="Storm over road">
+                <figcaption>Sunrise at the bay of Fish Haven</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather_images/placeholder.jpg" data-src="images/weather_images/thunderstorm.jpg" alt="Windy field">
+                <figcaption>High winds in Soda Springs</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
         <p>
@@ -59,7 +97,9 @@
                 Montoya</a>
         </p>
         <p>Current Date: <span id="currentdate"></span></p>
+        <p>Days since last visit: <span id="lastvisited"></span></p>
     </footer>
+    
 </body>
 
 </html>

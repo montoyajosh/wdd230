@@ -13,9 +13,14 @@
         font-size: 2rem;
         margin-left: 17px;
     }
-
+        
     main {
-        margin-top: 0
+        margin: 0 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     nav {
@@ -43,16 +48,4 @@
         display: none;
     }
 
-    .weather-sum {
-        padding: 1rem;
-        grid-template-columns: 1fr 1fr;
-        position: absolute;
-        top: 10%;
-        right: 60%;
-    }
-    
-    .contact-info {
-        max-width: 780px;
-        margin: auto;
-    }
 }
