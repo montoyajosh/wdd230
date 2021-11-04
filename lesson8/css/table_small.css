@@ -1,0 +1,55 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 7px 7px 9px #628CA6;
+    margin: auto 0;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 0.8rem;
+}
+
+thead tr:first-child {
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: #7FB9C2;
+}
+
+thead tr:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: #628CA6;
+}
+
+tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
+}
+.gray_fill {
+    background-color: #E7F0ED;
+}
+
+.green_fill {
+    background-color: #E7FFED;
+}
+
+tfoot tr {
+    background-color: #7FB9C2;
+    font-size: .9rem;
+}
+
+#sales_goal {
+    background-color: #628CA6;
+    color: white;
+}

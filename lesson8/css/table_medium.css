@@ -1,0 +1,9 @@
+@media only screen and (min-width: 540px) {
+    body {
+        font-size: 18px;
+    }
+    table {
+        margin: 1rem auto;
+        width: auto;
+    }
+}
