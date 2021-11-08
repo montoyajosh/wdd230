@@ -43,16 +43,19 @@
         display: none;
     }
 
-    .weather-sum {
-        padding: 1rem;
-        grid-template-columns: 1fr 1fr;
-        position: absolute;
-        top: 10%;
-        right: 60%;
+    .report-form {
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
-    
-    .contact-info {
-        max-width: 780px;
-        margin: auto;
+
+    fieldset:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .right-btn {
+        grid-column: 1 / span 3;
     }
 }
