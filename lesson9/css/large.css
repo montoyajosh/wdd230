@@ -55,4 +55,16 @@
         max-width: 780px;
         margin: auto;
     }
+
+    #towns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+    
+    #towns section {
+        display: block;
+    }
 }

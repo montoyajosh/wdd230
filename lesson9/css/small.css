@@ -274,24 +274,51 @@ a:active {
 }
 
 #towns {
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
   
 #towns section {
-    background-color: lightgray;
-    padding: 2rem;
-    margin-top: 2rem;
+    background-color: rgb(200, 228, 226);
+    padding: 1rem;
+    margin-top: 1rem;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
-}
-  
-#towns section div {
-    padding: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
 }
   
 #towns section img {
     box-shadow: 1px 1px 10px black;
     max-width: 100%;
-    margin: 1rem 0;
+}
+
+.wire{
+    display: block;
+    text-align: center;
+} 
+
+.wireframe {
+    background-color: rgb(200, 228, 226);
+    padding: 1rem;
+    margin-top: 1rem;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);  
+}
+
+.wireframe img {
+    max-width: 100%;
+    margin: 1rem 0 1rem 0;
+}
+
+.wireframe a:link,
+.wireframe a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.wireframe a:hover,
+.wireframe a:active {
+    color: #e6a10d
 }

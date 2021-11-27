@@ -115,4 +115,19 @@
         margin: auto;
         padding: 0 2em
     }
+
+    #towns section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    #towns section:nth-child(odd) div {
+        grid-column: 2;
+    }
+      
+    #towns section:nth-child(odd) img {
+        grid-column: 1;
+        grid-row: 1;
+    }
 }
