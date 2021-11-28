@@ -229,6 +229,10 @@ form input, form select {text-align: center;
     
 }
 
+p .btn1 {
+    color: black;
+}
+
 .right-btn {
     margin:1rem 1rem 0 0;
     display:flex;

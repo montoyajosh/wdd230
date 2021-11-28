@@ -1,0 +1,115 @@
+@media only screen and (min-width: 768px) {
+    header img {
+        width: 10rem;
+        height: auto;
+    }
+
+    .headings h1 {
+        font-size: 3rem;
+    }
+
+    .m {
+        letter-spacing: 1.5pt;
+        font-size: 2rem;
+        margin-left: 17px;
+    }
+
+    main {
+        margin-top: 0
+    }
+
+    nav {
+        max-width: 100%
+    }
+
+    .navigation {
+        margin-top: -1px;
+        display: inline-flexbox;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .navigation li:nth-child(1) {
+        display: none;
+    }
+
+    .weather-sum {
+        width: 60%;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 10%;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .weather-sum span {
+        color: white;
+    }
+    
+    .contact-info {
+        max-width: 780px;
+        margin: auto;
+    }
+    /* home page */
+    .weather-sum {
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 10%;
+        right: 33%;
+    }
+    
+    .contact-info {
+        max-width: 780px;
+        margin: auto;
+    }
+
+    #towns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        max-width: 768px;
+    }
+    
+    #towns section {
+        display: block;
+    }
+    /* home page */
+    /* stormcenter */
+    .report-form {
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    fieldset:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .right-btn {
+        grid-column: 1 / span 3;
+    }
+    /* stormcenter */
+    /* gallery */
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    /* gallery */
+}
+
