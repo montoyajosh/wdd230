@@ -219,6 +219,27 @@ main section .label {
     display: none;
 }
 
+.upcoming-events {
+    text-align: center;
+    margin: 1em 0 1em 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+
+.event-data:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.event-data h3 {
+    padding: .5rem;
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+}
+
 .article {
     text-align: center;
     margin: 1em 0 1em 0;
@@ -364,7 +385,7 @@ a:active {
 }
 /* home page */
 /* stormcenter */
-#sc {
+#stormcen {
     max-width: 1068px;
     margin: auto;
     padding: 1em 1em 0 1em;
@@ -485,18 +506,18 @@ p .btn1 {
     margin: 0 0 1rem 0
 }
 
-figure img[data-src] {
+#gal figure img[data-src] {
     filter: blur(0.2em);
     width: 100%;
 }
 
-figure img {
+#gal figure img {
     filter: blur(0em);
     transition: filter 0.4s;
     width: 100%;
 }
 
-figure {
+#gal figure {
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
@@ -504,7 +525,7 @@ figure {
     margin: 0
 }
 
-figure:hover {
+#gal figure:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -517,7 +538,7 @@ figcaption {
 }
 /* gallery */
 @media only screen and (min-width: 400px){
-    gal {
+    #gal {
         margin-top: 0;
         margin: 0 10%;
     }

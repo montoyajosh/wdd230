@@ -1,4 +1,4 @@
-const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
+const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&appid=c3affef608fbd43350f108a8f72cddac&id=5607916';
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     
@@ -24,9 +24,9 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     
     document.querySelector('.windchill').innerHTML = windchill_factor;
     }
-);
+  );
 
-const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
+const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=c3affef608fbd43350f108a8f72cddac&id=5607916';
 
 fetch(forecastapiURL).then((response) => response.json()).then((jsonObject) => {
     

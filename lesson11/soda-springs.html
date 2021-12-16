@@ -12,9 +12,15 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script defer src="js/announcement.js"></script>
     <script defer src="js/date.js"></script>
     <script defer src="js/navigation.js"></script>
+    <script defer src="js/winchill.js"></script>
+    <script defer src="js/soda-springsweather.js"></script>
+    <script defer src="js/soda-springstown.js"></script>
 </head>
 
 <body>
@@ -40,13 +46,33 @@
         </ul>
     </nav>
     <main>
-        <h1>Preston, Idaho</h1>
+        <h1>Soda Springs, Idaho</h1>
         <section class="hero">
             <picture>
                 <source srcset="images/heroimage_768w.jpg" media="(min-width: 540px) and (max-width: 767px)">
                 <source srcset="images/heroimage_1100w.jpg" media="(min-width: 768px)">
                 <img src="images/heroimage_540w.jpg" alt="Spring field">
             </picture>
+            <div class="weather-sum">
+                <h2>Weather Summary
+                    <hr>
+                </h2>
+                <div class="weather-summary-grid">
+                    <span class="label">Currently: </span><span class="currently">Partly Cloudy</span>
+                    <span class="label">Temperature: </span><div><span class="temperature"></span>&#176;F</div>
+                    <span class="label">Wind Chill: </span><div><span class="windchill"></span></div>
+                    <span class="label">Humidity: </span><div><span class="humidity"></span>%</div>
+                    <span class="label">Wind Speed: </span><div><span class="windspeed"></span> mph</div>
+                </div>
+            </div>
+        </section>
+        <section class="upcoming-events">
+            <h2>Upcoming Events<hr></h2>
+            <div id="events"></div>
+        </section>
+        <section class="forecast"> 
+            <h2>Five Day Forecast</h2>
+            <div class="flex"></div>
         </section>
         <section class="article ">
             <picture>
@@ -54,10 +80,8 @@
                 <source srcset="images/rainybg_1100w.jpg" media="(min-width: 769px)">
                 <img src="images/rainybg_540w.jpg" alt="A girl with an umbrella under the rain">
             </picture>
-            <h2>Be active even if it's raining</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque accumsan leo, vitae lobortis elit lacinia quis. Duis mollis sapien nec sem pellentesque consequat. Cras mollis, lectus vel tempor sodales, orci risus sollicitudin elit, et suscipit massa justo eget nulla. In laoreet erat libero. Phasellus ipsum ante, lobortis nec est placerat, feugiat varius enim. Sed vitae consequat ante. Sed mollis velit sit amet mauris aliquet, ac vulputate augue ultricies. Etiam ac dignissim tellus. Aenean luctus turpis elit, eu commodo est consectetur vitae. Aliquam lectus libero, suscipit rhoncus posuere condimentum, porttitor eget lorem. Maecenas ac rhoncus leo, tincidunt auctor purus. Nam faucibus augue interdum, elementum felis id, efficitur arcu. Aliquam et elementum nisi.</p>
-            <br>
-            <p>Donec lobortis volutpat lorem sed iaculis. Vivamus elementum nec ex in euismod. Quisque dui leo, consectetur et placerat vitae, sollicitudin eu leo. Nulla erat eros, ultrices a diam at, ultrices tempor sem. Donec pellentesque pellentesque mi sit amet interdum. Nunc quam nibh, fringilla eu commodo lobortis, euismod vel felis. Etiam consectetur ex a enim elementum suscipit non sed eros. Vivamus erat sapien, dignissim at laoreet id, commodo a nibh. Proin ut quam id arcu hendrerit venenatis. Nam posuere suscipit nisl vitae tempus. Morbi id lorem sit amet metus porttitor vestibulum.</p>
+            <h2>Adventure</h2>
+            <p>Adventures include making happy memories. These memories can be cherished and looked up to in time of distress. Going out on a short trip with friends is exciting. Adventure camps are regularly initiated by several schools. The students who are involved in these activities are generally guides and scouts. The activities involved are adventure camps, bonfires and tent activities. Some of the activities that are considered adventurous can be listed. Water activities like zorbing, skiing in the water are fun. Fishing can be a fun activity for many. Some might find hiking to unknown places adventurous. Adventure is mostly related to knowing the unknown. It gives the person hope to look at something new and exciting. A bonfire is an excellent beginning for adventures. A warm cup of hot chocolate and bonfire dances are great forms of enjoyment for the vagabond heart. Playing instruments can be considered as a fun activity during a bonfire. The escape from the mundane activities of life instigates the thirst for Adventure.</p>
         </section>
     </main>
     <section class="contact-info">
