@@ -187,7 +187,7 @@ picture img {
     color: white;
     background-color: #00547A;
     font-size: 16px;
-    
+    margin: 0 0 1em 0
 }
 
 .join h2 {
@@ -195,12 +195,8 @@ picture img {
     grid-column: 1 / 3;
 }
 
-.antipolo-banner {
-    width: 100%; 
-}
-
-.purpose {
-    padding: 1em;
+.antipolo-banner{
+    display: none;
 }
 
 hr {
@@ -211,10 +207,8 @@ main section .label {
     font-weight: bold;
     text-align: right;
 }
+
 .forecast {
-    display: none;
-}
-.flex {
     display: none;
 }
 
@@ -241,7 +235,7 @@ main section .label {
 
 .purpose {
     text-align: center;
-    margin: 1em 0 1em 0;
+    margin: 0 0 1em 0;
     background: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
@@ -251,6 +245,26 @@ main section .label {
 .purpose p {
     text-align: justify;
     margin: 0;
+}
+
+.antipolo {
+    padding: 1em;
+}
+
+.img1 {
+    float: left;
+    width: 40%;
+    margin: 0 .5em .5em 0;
+    border: 1px solid #0201002c;
+    box-shadow: 3px 3px 4px #0201002c;
+}
+
+.img2 {
+    float: right;
+    width: 35%;
+    margin: .5em 0 0 .5em;
+    border: 1px solid #0201002c;
+    box-shadow: 3px 3px 4px #0201002c;
 }
 
 .contact-info p {
@@ -298,6 +312,52 @@ main section .label {
     padding: .5rem 0.1rem;
     border-radius: 15px;
 }
+/* gallery */
+#gal {
+    text-align: center;
+    margin-top: 16px;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    margin: 0 0 1rem 0
+}
+
+#gal figure img[data-src] {
+    filter: blur(0.2em);
+    width: 100%;
+}
+
+#gal figure img {
+    filter: blur(0em);
+    transition: filter 0.4s;
+    width: 100%;
+}
+
+#gal figure {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border: 1px solid rgb(87, 86, 86);
+    margin: 0
+}
+
+#gal figure:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    padding: .5rem;
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+}
+/* gallery */
 
 #currentdate,
 #link,

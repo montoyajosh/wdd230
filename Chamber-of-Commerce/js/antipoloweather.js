@@ -1,30 +1,21 @@
 const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?q=Antipolo&units=metric&appid=c3affef608fbd43350f108a8f72cddac";
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
-    
-    const temperature = document.querySelector('.temperature');
+    let temperature = document.createElement('h3');
     t = jsonObject.main.temp;
-    temperature.textContent = t;
-
-    const currently = document.querySelector('.currently');
-    currently.textContent = jsonObject.weather[0].description;
-
-    const windspeed = document.querySelector('.windspeed');
-    w = jsonObject.wind.speed;
-    windspeed.textContent = w;
-
-    const humidity = document.querySelector('.humidity');
-    humidity.textContent = jsonObject.main.humidity;
-
-    let windchill_factor = 'N/A';
-
-    if ((t <= 50) && (w > 3)) {
-        windchill_factor = `${Math.round(35.74 + (0.6215 * t) - (35.75 * Math.pow(w, 0.16)) + ((0.4275 * t) * Math.pow(w, 0.16)))}&#176;F`;
-    } 
+    temperature.textContent = "Temperature: " + t + " °C";
+    document.querySelector('.weather-forecast').appendChild(temperature);
     
-    document.querySelector('.windchill').innerHTML = windchill_factor;
-    }
-);
+    let currently = document.createElement('h3');
+    weather = jsonObject.weather[0].description;
+    currently.textContent = "Currently: " + weather;
+    document.querySelector('.weather-forecast').appendChild(currently);
+
+    let humidity = document.createElement('h3');
+    wind = jsonObject.main.humidity;
+    humidity.textContent = "Humidity: " + wind + "%";
+    document.querySelector('.weather-forecast').appendChild(humidity);
+});
 
 const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?q=Antipolo&units=metric&appid=c3affef608fbd43350f108a8f72cddac';
 
@@ -59,7 +50,7 @@ fetch(forecastapiURL).then((response) => response.json()).then((jsonObject) => {
 
             let data_span = document.createElement('span');
             data_span.classList.add('data');
-            data_span.innerHTML = `${Math.round(forecast[i].main.temp)}&#176;F`;
+            data_span.innerHTML = `${Math.round(forecast[i].main.temp)}°C`;
             weather_info_div.appendChild(data_span);            
     
             document.querySelector('div.flex').appendChild(flexcol);

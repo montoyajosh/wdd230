@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/date.js"></script>
     <script defer src="js/navigation.js"></script>
+    <script defer src="js/events.js"></script>
+    <script defer src="js/lazyload.js"></script>
 </head>
-
+    
 <body>
     <header>
         <picture><img src="images/store.png" alt="The weather logo" /></picture>
@@ -34,8 +36,49 @@
             <li><a href="Contact.html" class="list">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Join Us!</h1>
+    <main id="gal">
+        <h1>Antipolo City</h1>
+        <article class="purpose antipolo">
+            <img class="img1" src="images/Antipolo-City.jpg" alt="Antipolo City Hall">
+            <h2>About the City</h2>
+            <p>Antipolo is a component city in the landlocked province of Rizal. It serves as the provincial capital. <br>The city has a land area of 306.10 square kilometers or 118.19 square miles which constitutes 25.88% of Rizal's total area. Its population as determined by the 2020 Census was 887,399. This represented 26.65% of the total population of Rizal province, or 5.48% of the overall population of the CALABARZON region. Based on these figures, the population density is computed at 2,899 inhabitants per square kilometer or 7,508 inhabitants per square mile.    
+            </p>
+            <br>
+            <p>Antipolo was converted from a municipality into a component city of Rizal Province on April 4, 1998, under Republic Act No. 8508. A new provincial capitol building was inaugurated in the city in March 2009 to replace the old capitol in Pasig, which has long been outside the jurisdiction of Rizal Province, since Pasig was included in Metro Manila in 1975. With the transfer of the provincial government to Antipolo, it is highly favored to be officially designated as the new capital of the province.</p>
+            <br>
+            <img class="img2" src="images/events.jpg" alt="Mountian">
+            <p>Antipolo is classified as a First Class City as of last local government income classification of the Department of Finance in 2008. In 2007, the city registered a total revenue of ₱993.1 million, an increase of 5.6 percent from the previous fiscal year; in 2010 this amount has grown to ₱1.56 billion. Its proximity to Metro Manila has continuously spurred the growth of the real estate industry and by 2007, revenue from real property taxes has ballooned by 32.1 percent from 2006 to ₱146.2 million as there are also about 456 residential subdivisions in the city.</p>
+        </article>
+        <article id="events" class="purpose left">
+            <h2>Upcoming Event</h2><hr></div>
+        </article>
+        <h2>Attractions in Antipolo City</h2><hr><br>
+        <div class="gallery">
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/place1.jpg" alt="Tower at Cloud 9">
+                <figcaption>Cloud 9</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg"  data-src="images/place2.jpg" alt="Museum">
+                <figcaption>Pinto Art Museum</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg"  data-src="images/place3.jpg" alt="Cafe and restaurant at Antipolo">
+                <figcaption>Cafe Lupe Bed and Breakfast Antipolo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg"  data-src="images/place4.jpg" alt="Cafe at Antipolo">
+                <figcaption>Yellow Lantern Cafe </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg"  data-src="images/place5.jpg" alt="Spa">
+                <figcaption>Luljetta’s Hanging Gardens and Spa</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" d data-src="images/place 6.jpg" alt="Mountain Resort">
+                <figcaption>Cristina Villas Mountain Resort</figcaption>
+            </figure>
+        </div>
     </main>
     <footer>
         <section class="contact">
