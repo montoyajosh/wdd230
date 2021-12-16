@@ -54,6 +54,22 @@
     .forecast {
         display: block;
     }
+    
+    .report-form {
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    fieldset:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .right-btn {
+        grid-column: 1 / span 3;
+    }
 
 }
 

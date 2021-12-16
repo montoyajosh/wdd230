@@ -358,6 +358,117 @@ figcaption {
     font-size: 18px;
 }
 /* gallery */
+/* join */
+#membership-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    text-align: left;
+}
+
+.black {
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.63);
+    text-align: left;
+}
+.brown {
+    border: 1px solid rgba(165, 108, 42, 0.911);
+    box-shadow: 0 4px 8px 0 rgba(165, 108, 42, 0.911);
+    text-align: left;
+}
+.silver {
+    border: 1px solid rgba(192, 192, 192, 0.959);
+    box-shadow: 0 4px 8px 0 rgba(192, 192, 192, 0.959);
+    text-align: left;
+}
+.gold {
+    border: 1px solid rgba(255, 217, 0, 0.924);
+    box-shadow: 0 4px 8px 0 rgba(255, 217, 0, 0.924);
+    text-align: left;
+}
+
+.report-form {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+fieldset {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+
+form label.top {
+    display: block;
+    color: #00547A;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+}
+
+form input, form select {text-align: center;
+    margin: 0 .5rem 0 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #c96B11;
+    color: black;
+    outline: none;
+    padding: 0.5rem;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+}
+
+form label {
+    cursor: pointer;
+}
+
+form input:required {
+    border-bottom: 2px solid #ff0000;
+}
+
+.message, .report-form{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin: 1em 0 1em 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn1 {
+    border: 1px solid rgb(87, 86, 86);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+p .btn1 {
+    color: black;
+}
+
+.right-btn {
+    margin:1rem 1rem 0 0;
+    display:flex;
+    justify-content: flex-end;
+    grid-column: 1;
+}
+
+.btn1:link, 
+.btn1:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.btn1:hover,
+.btn1:active {
+    color: bl
+}
+/* join */
 
 #currentdate,
 #link,

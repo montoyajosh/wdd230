@@ -35,7 +35,56 @@
         </ul>
     </nav>
     <main>
-        <h1>Join Us!</h1>
+        <h1>Become a member now!</h1>
+        <div id="membership-grid">
+            <article class="purpose black">
+                <h3>Non-Profit Membership</h3>
+                <ul><li>Become a partner</li><li>Advertisement of Products</li><li>Free use of utilities</li></ul>
+            </article>
+            <article class="purpose brown">
+                <h3>Bronze Membership</h3>
+                <ul><li>Become a partner</li><li>Advertisement of Products</li><li>Free use of utilities</li><li>Minimal Chance to become an Executive </li></ul>
+            </article>            
+            <article class="purpose silver"> 
+                <h3>Silver Membership</h3>
+                <ul><li>Become a partner</li><li>Advertisement of Products</li><li>Free use of utilities</li><li>Higher Chances to become an Executive</li><li>First Class</li></ul>
+            </article>            
+            <article class="purpose gold"> 
+                <h3>Golden Membership</h3>
+                <ul><li>Become a partner</li><li>Advertisement of Products</li><li>Free use of utilities</li><li>Executive Powers</li><li>First Class</li><li>Priotization</li></ul>
+            </article>
+        </div>
+        <form class="report-form" method="get" action="Join-Membership-Thank-You.html">
+            <h2>Please fill-out the form.<hr></h2>
+            <fieldset>
+				<label class="top">First Name: <input type="text" name="fname" pattern="[a-zA-Z ]{3,}" title="3 letters min, a-z A-Z." placeholder=" " required></label><br>
+				<label class="top">Last Name: <input type="text" name="lname" pattern="[a-zA-Z ]{3,}" title="3 letters min, a-z A-Z." placeholder=" " required></label><br>
+				<label class="top">Title: <input type="text" name="title"></label><br>
+				<label class="top">Email: <input type="email" name="email" required placeholder="example@mail.com"></label><br>
+				<label class="top">Cell Phone: <input type="tel" name="cellphone" placeholder="(   ) ___-____"></label><br>
+			</fieldset>
+			<fieldset>
+				<label class="top">Business Name: <input type="text" name="bname" pattern="[a-zA-Z ]{5,}" title="5 letters min, a-z A-Z." placeholder=" " required></label><br>
+				<label class="top">Business Address: <input type="text" name="baddress"></label><br>
+				<label class="top">Business Website: <input type="url" name="bwebsite" placeholder="https://example.com"></label><br>
+				<label class="top">Business Description: <br><textarea name="bdescription" cols="25" rows="10"></textarea></label><br>
+			</fieldset>
+			<fieldset>
+				<label class="top">Membership Selection: 
+					<select id="membership-selection" name="membership">
+						<option value="" selected disabled>Select Membership</option>
+						<option value="non-profit">Non-profit Membership</option>
+						<option value="bronze">Bronze Membership</option>
+						<option value="silver">Silver Membership</option>
+						<option value="gold">Golden Membership</option>
+					</select>
+				</label>
+            </fieldset>
+            <div class="right-btn">
+			    <input type="submit" value="Submit" class="btn1">
+            </div>
+        </form>
+        <br>
     </main>
     <footer>
         <section class="contact">

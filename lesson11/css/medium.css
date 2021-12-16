@@ -134,8 +134,8 @@
     /* home page */
     /* stormcenter */
     .report-form {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 40% 50%;
     }
 
     fieldset:nth-child(3) {
