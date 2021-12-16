@@ -210,7 +210,20 @@ form input, form select {text-align: center;
     font-family: 'Antic Slab', serif;
     font-size: 18px;
 }
-  
+
+#storm-severity {
+    color: #c96B11;
+    padding: 0
+}
+
+label {
+    cursor: pointer;
+}
+
+input:required {
+    border-bottom: 1px solid #ff0000;
+}
+
 .message, .report-form{
     background-color: #ffffff;
     padding: 1.5rem;

@@ -18,6 +18,7 @@
     <script defer src="js/announcement.js"></script>
     <script defer src="js/date.js"></script>
     <script defer src="js/navigation.js"></script>
+    <script defer src="js/stormcenter.js"></script>
 </head>
 
 <body>
@@ -48,9 +49,9 @@
         <form method="get" action="/wdd230/lesson8/thanks.html" class="report-form">
 			<fieldset>
 				<legend>User Information</legend>
-				<label class="info">Full Name: <input type="text" name="fname" pattern="[a-zA-Z ]{5,}" required></label>
+				<label class="info">Full Name: <input type="text" name="fname" pattern="^((?:\s*[A-Za-z]\s*){5,})$" required placeholder="John Doe"></label>
                 <label class="info">Email: <input type="email" name="email" placeholder="example@mail.com"></label>
-                <label class="info">Phone: <input type="tel" name="phone" required></label>	            
+                <label class="info">Phone: <input type="tel" name="phone" required placeholder="(___) ___-____"></label>	            
                 <label class="info">ZIP Code: <input type="number" name="zipCode" required></label>
 			</fieldset>
 			<fieldset>
@@ -73,15 +74,27 @@
 						<option value="fish-haven">Fish Haven</option>
 					</select>
 				</label>
-                <label class="info">Storm Severity: <input type="range" min="1" max="10" name="stormSeverity"></label>
-			</fieldset>
+                <label class="info">Storm Severity: <span id="value">1</span> &#160;&#160;<input id="storm-severity" type="range" value="1" min="1" max="10" name="stormSeverity" step="1" list="ranges" oninput="toggleRating(this.value)" onchange="toggleRating(this.value)"></label>
+                <datalist id="ranges">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+            </fieldset>
 			<fieldset>
 				<legend>Additional Information</legend>
-				<div>User In-Danger Level:</div>
-				<label class="sbs"><input type="radio" name="inDanger" value="yes"> Yes</label>
-				<label class="sbs"><input type="radio" name="inDanger" value="maybe"> Maybe</label>
-				<label class="sbs"><input type="radio" name="inDanger" value="no"> No</label>
-				<label class="top">Additional Information or Comments: <textarea name="additionalInfo"></textarea></label>
+				<label class="info">User In-Danger Level:</label>
+                <div class="radio-selecion"><label class="sbs"><input type="radio" name="inDanger" value="yes"> Yes</label></div>
+                <div class="radio-selecion"><label class="sbs"><input type="radio" name="inDanger" value="maybe"> Maybe</label></div>
+                <div class="radio-selecion"><label class="sbs"><input type="radio" name="inDanger" value="no"> No</label></div>
+				<label class="top info">Additional Information or Comments: <br><textarea name="additionalInfo" rows="8" tabindex="0"></textarea></label>
 			</fieldset>
             <div class="right-btn">
 			    <input type="submit" value="Send Storm Info" class="btn1">
