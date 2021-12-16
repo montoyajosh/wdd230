@@ -1,5 +1,5 @@
 function upcomingEvents () {
-    const url = "https://montoyajoshua.github.io/wdd230/Chamber-of-Commerce/json/events.json";
+    const url = "https://montoyajosh.github.io/wdd230/Chamber-of-Commerce/json/events.json";
 
     fetch(url)
     .then(function (response) {
