@@ -1,0 +1,95 @@
+@media only screen and (min-width: 768px) {
+    header img {
+        width: 10rem;
+        height: auto;
+    }
+
+    .headings h1 {
+        font-size: 3rem;
+    }
+
+    .m {
+        letter-spacing: 1.5pt;
+        font-size: 2rem;
+        margin-left: 17px;
+    }
+
+    main {
+        margin-top: 0
+    }
+
+    nav {
+        max-width: 100%
+    }
+
+    .navigation {
+        margin-top: -1px;
+        display: inline-flexbox;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 1em;
+    }
+
+    .navigation li:nth-child(1) {
+        display: none;
+    }
+
+    .join {
+        width: 60%;
+        padding: 1rem;
+        width: auto;
+        grid-template-columns: 1fr 1fr;
+        position: absolute;
+        top: 10%;
+    }
+
+    .antipolo_banner {
+        width: 100%; 
+    }
+
+    .flex {
+        
+    }
+
+    #main-grid {
+        display: grid;
+        grid-template-columns: 70% auto;
+        grid-gap: 1em;
+        margin: 1em;
+    }
+
+    .left {
+        grid-column: 1/2;
+    }
+    
+    .rigth {
+        grid-column: 2/3;
+    }
+
+    .contact {
+        grid-template-columns: 27% 58% auto;
+        grid-template-rows: 1fr;
+        grid-gap: 1.5em;
+    }
+
+    #gmap_canvas {
+        width: 100%;
+        height: 200px;
+        grid-column: 1/ span 2;
+        grid-row: 1/2 ;
+    }
+    
+    .social_media {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
