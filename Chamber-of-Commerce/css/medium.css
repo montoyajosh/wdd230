@@ -1,0 +1,21 @@
+@media only screen and (min-width: 540px) {
+    .contact {
+        color: white;
+        padding: 1em;
+        border-bottom: 2px solid white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    .mapouter .gmap_canvas{
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        align-items: center;
+        grid-row: 2;
+        grid-column: 1/3;
+
+    }
+}
