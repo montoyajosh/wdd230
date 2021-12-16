@@ -1,0 +1,46 @@
+{
+    "organizations": [
+      {
+        "name": "Cd Handicrafts",
+        "phone": "+63(2) 647-0350",
+        "address": "Road 25 Coner Road 31, Phase 1 Cogeo Village",
+        "website": "https://www.facebook.com/CD-Handicrafts-282997155116337/",
+        "logo": "N/A"
+      },
+      {
+        "name": "Stem Exports",
+        "phone": "+63(2) 681-3195",
+        "address": "1 Cheza Street Corner Gertrudes Street, F E U Village",
+        "website": "https://www.stem22.com",
+        "logo": "N/A"
+      },
+      {
+        "name": "Toby's Sports - Sm City Masinag",
+        "phone": "+63(2) 655-2720",
+        "address": "2/F SM City Masinag, Marcos Highway",
+        "website": "https://www.tobys.com",
+        "logo": "N/A"
+      },
+      {
+        "name": "Tyra's Marketing",
+        "phone": "+63(2) 696-0768",
+        "address": "B4/L2 Applewood Street, Bayugo, Cottonwood Heights",
+        "website": "https://www.yellow-pages.ph/business/tyra-s-marketing/videos",
+        "logo": "N/A"
+      },
+      {
+        "name": "Fern-C",
+        "phone": "+63(2) 289-5129",
+        "address": "Unit 2, 2/F Spectrum Building, 158 Marcos Highway",
+        "website": "https://www.facebook.com/fernconline/",
+        "logo": "N/A"
+      },
+      {
+        "name": "Cornerstone",
+        "phone": "+63(2) 697-3898",
+        "address": "1 Apitong Street, Evergreen Executive Village",
+        "website": "https://www.facebook.com/cornerstoneclothing/",
+        "logo": "N/A"
+      }
+    ]
+  }

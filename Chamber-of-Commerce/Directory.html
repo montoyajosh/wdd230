@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/date.js"></script>
     <script defer src="js/navigation.js"></script>
+    <script defer src="js/directory.js"></script>
 </head>
 
 <body>
@@ -27,15 +28,17 @@
     <nav>
         <ul class="navigation">
             <li class="menu">&#9776; Menu</li>
-            <li><a href="index.html" class="list active">Home</a></li>
+            <li><a href="index.html" class="list ">Home</a></li>
             <li><a href="Antipolo-City.html" class="list">Antipolo City</a></li>
             <li><a href="Join-Membership.html" class="list">Join</a></li>
-            <li><a href="Directory.html" class="list">Directory</a></li>
+            <li><a href="Directory.html" class="list active">Directory</a></li>
             <li><a href="Contact.html" class="list">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Join Us!</h1>
+        <h1>Directory<button title="List View" class="listbutton">&#8863;</button>
+        <button title="Grid View" class="gridbutton">&#8862;</button><hr></h1>
+        <div class="directory grid"></div>
     </main>
     <footer>
         <section class="contact">

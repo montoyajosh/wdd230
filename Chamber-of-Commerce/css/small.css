@@ -387,6 +387,14 @@ figcaption {
     text-align: left;
 }
 
+#contact {
+    max-width: 540px;
+}
+#contact .report-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% auto 10%;
+}
+
 .report-form {
     display: grid;
     row-gap: 1rem;
@@ -444,7 +452,6 @@ form input:required {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     cursor: pointer;
-    
 }
 
 p .btn1 {
@@ -469,6 +476,63 @@ p .btn1 {
     color: bl
 }
 /* join */
+/* directory */
+.listbutton, .gridbutton{
+    float: right;
+    background-color: #c96B11;
+    margin: -5px 5px;
+}
+.directory {
+    margin: 0 0 1em 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border: 1px solid rgba(255, 217, 0, 0.924);
+    
+}
+
+.storediv {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 217, 0, 0.924);
+    box-shadow: 0 4px 8px 0 rgba(255, 217, 0, 0.924);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 1em
+}
+
+.list {
+    display: flex;
+    flex-direction: column
+}
+
+
+.storediv {
+    text-align: center;
+    color: black;
+}
+
+.storediv a:link,
+.storediv a:visited {
+    font-size: 1.5em;
+    color: #c96B11
+}
+
+/* directory */
+/* attribution */
+#attribution a {
+    cursor: pointer;
+}
+
+#attribution a:link,
+#attribution a:visited {
+    font-size: 1.5em;
+    color: #c96B11
+}
+/* attribution */
 
 #currentdate,
 #link,

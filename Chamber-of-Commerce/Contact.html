@@ -27,15 +27,29 @@
     <nav>
         <ul class="navigation">
             <li class="menu">&#9776; Menu</li>
-            <li><a href="index.html" class="list active">Home</a></li>
+            <li><a href="index.html" class="list ">Home</a></li>
             <li><a href="Antipolo-City.html" class="list">Antipolo City</a></li>
             <li><a href="Join-Membership.html" class="list">Join</a></li>
             <li><a href="Directory.html" class="list">Directory</a></li>
-            <li><a href="Contact.html" class="list">Contact</a></li>
+            <li><a href="Contact.html" class="list active">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Join Us!</h1>
+    <main id="contact">
+        <div>
+            <h1>Contact Us Here!</h1>
+            <form class="report-form" method="get" action="Join-Membership-Thank-You.html">
+                <h2>Please fill-out the form.<hr></h2>
+                <fieldset>
+                    <label class="top">Name: <input type="text" name="fname" pattern="[a-zA-Z ]{3,}" title="3 letters min, a-z A-Z." placeholder=" " required></label><br>
+                    <label class="top">Email: <input type="email" name="email" required placeholder="example@mail.com"></label><br>
+                    <label class="top">Cell Phone: <input type="tel" name="cellphone" placeholder="(   ) ___-____"></label><br>
+                    <label class="top">Your Message: <br><textarea name="bdescription" cols="25" rows="10"></textarea></label><br>
+                </fieldset>
+                <div class="right-btn">
+			        <input type="submit" value="Submit" class="btn1">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <section class="contact">
